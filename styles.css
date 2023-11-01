@@ -1,0 +1,535 @@
+/* Universal Style */
+
+html {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    background-color: #0F0F0F;
+    color: white;
+}
+
+.mainContent {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* Header Style */
+
+header {
+    font-family: Roboto, sans-serif;
+    border-bottom: #2E2E2E;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+    height: 0.9375rem;
+}
+
+header ul {
+    display: flex;
+    padding: 0;
+  }
+
+nav ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    padding-left: 5rem;
+    align-self: center;
+}
+
+header .logo {
+    flex: 1;
+    padding-left: 1rem;
+}
+
+ul .icon {
+    font-size: 40px;
+    vertical-align: middle;
+    border: none;
+}
+
+ul .icon-facebook2 {
+    font-size: 20px;
+}
+
+header p {
+    color: #FF6600;
+}
+
+header a {
+    text-decoration: none;
+    color: #FF6600;
+}
+
+header a:hover {
+    border-bottom: 2px solid #FF6600;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+p span {
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: flex;
+    }
+
+    li .icon {
+        font-size: 2rem;
+    }
+
+    li .button {
+        border: 1px solid #FF6600;
+        background-color: #FF6600;
+        border-radius: 3px;
+        letter-spacing: .07em;
+        text-align: center;
+        color: #0F0F0F;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    li {
+        padding-left: 3rem;
+    }  
+}
+
+@media only screen and (max-width: 600px) {
+    header img {
+        width: 48px;
+        height: 48px;
+    }
+
+    li .icon {
+        border: none;
+        font-size: 2rem;
+    }
+
+    p span {
+        font-size: 1.7rem;
+    }
+
+    li .button {
+        font-size: 0.8rem;
+    }
+    
+    header .content {
+        padding: 1.3rem 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    header img {
+        display: none;
+    }
+
+    li {
+        padding-left: 2rem;
+    }
+    
+    li .icon {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    li .icon-user-tie {
+        display: none;
+    }
+
+    li {
+        padding-left: 0.5rem;
+    }
+}
+
+/* Description Section Style */
+
+#bookTimeSection {
+    display: flex;
+    margin-top: 1rem;
+}
+
+#bookTimeBox {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #2E2E2E;
+}
+
+#bookTimeBox .content {
+    width: 65%;
+    height: auto;
+}
+
+#bookTimeBox .companyShortDescription {
+    font-size: 2rem;
+}
+
+#bookTimeBox .companyLargeDescription {
+    font-size: 1rem;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+#bookTimeBox .button {
+    text-align: center;
+    height: 3rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    font-weight: 700;
+    color: #0F0F0F;
+    background-color: #FF6600;
+    border-radius: 3px;
+    letter-spacing: .07em;
+    margin-top: 30px;
+}
+
+#bookTimeBox .button:hover {
+    border: 1px solid #FF6600;
+    color: #FF6600;
+    background-color: #0F0F0F;
+}
+
+.backgroundImage { 
+    width: 50%;
+}
+
+.backgroundImage img { 
+    width: 100%;
+}
+
+@media only screen and (max-width: 1260px) {
+    .backgroundImage {
+        display: none;
+    }
+
+    #bookTimeBox{
+        width: 100%;
+        text-align: center;
+        background-image: url("/background-tablet.webp");
+        background-size: 100%;
+        height: 500px;
+        color: white;
+        margin: auto;
+        background-repeat: no-repeat;
+    }
+
+    #bookTimeBox .companyLargeDescription {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-weight: 400;
+        padding: 10px 40px;
+    }
+
+    #bookTimeBox .button:hover {
+        background-color:rgba(0, 0, 0, 0.5);
+    }    
+}
+
+@media only screen and (max-width: 900px) {
+    #bookTimeBox .button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    #bookTimeBox .companyLargeDescription {
+        font-size: 0.8rem;
+    }
+
+    #bookTimeBox .companyShortDescription {
+        font-size: 1.5rem;
+    }
+
+    #bookTimeBox .content {
+        width: 95%;
+    }
+
+    #bookTimeBox {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #bookTimeBox{
+        background-image: url("/background-mobile.webp");
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #bookTimeBox .companyLargeDescription {
+        display: none;
+    }
+
+    #bookTimeBox .companyShortDescription {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #bookTimeBox {
+        height: 250px;
+    }
+}
+
+/* Job Section Style */
+
+#jobSection {
+    max-width: 1840px;
+    margin: 100px auto;
+} 
+#jobSectionContainers {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    letter-spacing: .03em;
+}
+
+.jobType {
+    display: flex; 
+    width: 600px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 110px;
+    border-bottom: 2px solid #2E2E2E;
+}
+
+.jobType .center {
+    max-width: 600px;
+}
+
+.imageBox {
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.jobType h2 {
+    font-weight: 500;
+}
+
+.jobType p {
+    color: #FF6600;
+    font-weight: 300;
+}
+
+#description {
+    border-bottom: 2px solid #FF6600;
+    max-width: 1420px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1236px) {
+    .jobType {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #description  {
+        text-align: center;
+        color: #FF6600;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .jobType {
+        height: 400px;
+    }
+}
+
+/* Contact Section Style */
+
+#contactSection {
+    max-width: 1840px;
+    margin: 100px auto;
+}
+
+#contactSection .description {
+    border-bottom: 2px solid #FF6600;
+}
+
+#contactSection .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    flex-wrap: wrap;
+    background-color: #2E2E2E;
+    padding: 0 10px;
+}
+
+#contactSection .photo {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#contactSection .content {
+    margin-left: 100px;
+    width: 60%;
+}
+
+#contactSection img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #FF6600;
+}
+
+#contactSection .name {
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 2px solid #FF6600;
+}
+
+.icon-phone,
+.icon-envelop,
+.icon-location {
+    padding-right: 10px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #FF6600;
+}
+
+.contactPhone,
+.contactMail,
+.contactLocation {
+    color: #FF6600;
+    font-size: 1.25rem;
+    vertical-align: middle;
+    font-weight: 300;
+}
+
+.contactPhone:hover,
+.contactMail:hover {
+    font-weight: 400;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMedia .icon {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #FF6600;
+    margin: 20px;
+    color: #0F0F0F;
+}
+
+#contactSection .icon-facebook:hover {
+    background-color: #3B5998;
+}
+
+#contactSection .icon-youtube:hover {
+    background-color: #bb0000;
+}
+
+@media only screen and (max-width: 1236px) {
+    #contactSection .center {
+        text-align: center;
+    }
+
+    #contactSection .content {
+        margin: 0;
+        width: 90%;
+    }
+
+    #contactSection .description {
+        color: #FF6600;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #contactSection .content {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #contactSection .center {
+        margin: 70px 10px;
+    }
+}
+
+/* Partner Section Style */
+
+#partnerSection {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+/* Footer Style */
+
+#footer {
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: #2E2E2E;
+}
+
+.copyright {
+    flex: 1;
+    color: #FF6600;
+}
+
+.design {
+    font-size: 0.65rem;
+    color: #FF6600;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 700px) {
+    .copyright {
+        font-size: 0.6rem;
+    }  
+    .design {
+        font-size: 0.5rem;
+    }
+}
