@@ -60,52 +60,60 @@
             </div>
         </div>
 
-        <!-- Job and Media Section -->
         <div id="jobSection">
-            <div id="jobSectionContainers">
-                <div class="jobType"> <!-- Job 1 -->
-                    <div class="center">
-                        <div class="imageBox">
-                            <img alt="" src="resources/images/tyo1.webp">
-                        </div>
-                        <div class="content">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <div class="container">
+                        <div class="left-content">
                             <h2>Ongelmapuu kaadot</h2>
                             <p>Puunkaatoa turvallisesti ja ammattitaidolla. Vaikeimmat kohteet hoituu tarvittaessa kiipeilykaadolla.</p>
+                        </div>            
+                        <div class="right-content">
+                            <img src="resources/images/tyo1.webp" alt="Slide 1">
                         </div>
                     </div>
                 </div>
-                <div class="jobType"> <!-- Job 2 -->
-                    <div class="center">
-                        <div class="imageBox">
-                            <img alt="" src="resources/images/tyo2.webp">
-                        </div>
-                        <div class="content">
+                <div class="slide fade">
+                    <div class="container">
+                        <div class="left-content">
                             <h2>Maisemoinnit ja tonttihakkuut</h2>
                             <p>Useamman päivän työt riskittömissä kohteessa mahdollista toteuttaa myös tuntityönä, jolloin työn keskihinta puuta kohti jää edullisemmaksi.</p>
+                        </div>            
+                        <div class="right-content">
+                            <img src="resources/images/tyo2.webp" alt="Slide 2">                            
                         </div>
                     </div>
                 </div>
-                <div class="jobType"> <!-- Job 3 -->
-                    <div class="center">
-                        <div class="imageBox">
-                            <img alt="" src="resources/images/tyo3.webp">
-                        </div>
-                        <div class="content">
+                <div class="slide fade">
+                    <div class="container">
+                        <div class="left-content">
                             <h2>Metsän uudistus- ja hoitotyöt</h2>
-                            <p>Metsän istutukset, taimikon- ja nuorenmetsän hoitotoimien arviointi, suunnittelu ja toteutus urakkahinnoin kohteen mukaan.</p>
+                            <p>Metsän istutukset, taimikon- ja nuorenmetsän hoitotoimien arviointi, suunnittelu ja toteutus urakkahinnoin kohteen mukaan.</p>  
+                        </div>            
+                        <div class="right-content">
+                            <img src="resources/images/tyo3.webp" alt="Slide 3">
                         </div>
                     </div>
                 </div>
-                <div class="jobType"> <!-- Job 4 -->
-                    <div class="center">
-                        <div class="imageBox">
-                            <img alt="" src="resources/images/tyo4.webp">
-                        </div>
-                        <div class="content">
+                <div class="slide fade">
+                    <div class="container">
+                        <div class="left-content">
                             <h2>Lisäpalvelut</h2>
                             <p>Kaadon jälkeiset siivoukset sekä runkojen sahaus tarvittaessa vaikka polttopuumittaan.</p>
+                        </div>            
+                        <div class="right-content">
+                            <img src="resources/images/tyo4.webp" alt="Slide 4">
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="left-content"></div>
+                <div class="slider-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
             </div>
         </div>
@@ -136,5 +144,6 @@
             <span class="design">Designed by iNalsur</span>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
