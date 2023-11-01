@@ -214,9 +214,7 @@ header .mobile {
 }
 
 #bookTimeBox .button:hover {
-    border: 1px solid #FF6600;
-    color: #FF6600;
-    background-color: #0F0F0F;
+    opacity: 70%;
 }
 
 .backgroundImage { 
