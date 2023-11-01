@@ -31,6 +31,7 @@ header .content {
     align-items: center;
     padding: 1.875rem;
     height: 0.9375rem;
+    border-bottom: 1px solid #FF6600;
 }
 
 header ul {
@@ -175,7 +176,6 @@ header .mobile {
 
 #bookTimeSection {
     display: flex;
-    margin-top: 1rem;
 }
 
 #bookTimeBox {
