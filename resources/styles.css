@@ -341,7 +341,8 @@ header .mobile {
 
 .slider-dots {
     text-align: center;
-    width: 50%
+    width: 50%;
+    padding-top: 10px;
 }
 
 .dot {
