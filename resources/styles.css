@@ -70,12 +70,14 @@ header p {
 header a {
     text-decoration: none;
     color: #FF6600;
+    padding: 15px;
 }
 
 header a:hover {
-    border-bottom: 2px solid #FF6600;
-    padding-bottom: 10px;
-    font-weight: bold;
+    background-color: #FF6600;
+    color:#0F0F0F;
+    padding: 15px;
+    border-radius: 3px;
 }
 
 p span {
