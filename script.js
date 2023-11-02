@@ -51,3 +51,38 @@ function fadeIn(element) {
 setInterval(function() {
     plusSlides(1);
 }, 10000); 
+
+const bookTimeSection = document.getElementById("bookTimeSection");
+
+window.addEventListener("scroll", () => {
+    const windowHeight = window.innerHeight;
+    const bookTimeSectionRect = bookTimeSection.getBoundingClientRect();
+    const bookTimeSectionTop = bookTimeSectionRect.top;
+    const bookTimeSectionBottom = bookTimeSectionRect.bottom;
+
+    if (bookTimeSectionBottom > 0 && bookTimeSectionTop < windowHeight) {
+        bookTimeSection.style.opacity = 1;
+        bookTimeSection.style.transition = 'opacity 3s';
+    } else {
+        bookTimeSection.style.opacity = 0;
+        bookTimeSection.style.transition = 'opacity 1s';
+    }
+});
+
+
+const contactSection = document.getElementById("contactSection");
+
+window.addEventListener("scroll", () => {
+    const windowHeight = window.innerHeight;
+    const contactSectionRect = contactSection.getBoundingClientRect();
+    const contactSectionTop = contactSectionRect.top;
+    const contactSectionBottom = contactSectionRect.bottom;
+
+    if (contactSectionBottom > 0 && contactSectionTop < windowHeight) {
+        contactSection.style.opacity = 1;
+        contactSection.style.transition = 'opacity 3s';
+    } else {
+        contactSection.style.opacity = 0;
+        contactSection.style.transition = 'opacity 1s';
+    }
+});
