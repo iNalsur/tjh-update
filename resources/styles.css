@@ -282,13 +282,24 @@ header .mobile {
 @media only screen and (max-width: 530px) {
     #bookTimeBox .companyLargeDescription {
         position: relative;
+        grid-row: 1;
+        grid-column: 1;
     }
 
     #bookTimeBox .companyShortDescription {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 20px;
         position: relative;
+        grid-row: 1;
+        grid-column: 1;
     }
+
+    #bookTimeBox .header {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media only screen and (max-width: 490px) {
