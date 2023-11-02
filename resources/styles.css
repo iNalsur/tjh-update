@@ -367,8 +367,7 @@ header .mobile {
 /* Contact Section Style */
 
 #contactSection {
-    max-width: 1840px;
-    margin: 100px auto;
+    margin: 100px 0;
 }
 
 #contactSection .description {
@@ -379,10 +378,8 @@ header .mobile {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px;
     flex-wrap: wrap;
     background-color: #2E2E2E;
-    padding: 0 10px;
 }
 
 #contactSection .photo {
@@ -393,6 +390,7 @@ header .mobile {
 #contactSection .content {
     margin-left: 100px;
     width: 60%;
+    max-width: 400px;
 }
 
 #contactSection img {
@@ -428,7 +426,7 @@ header .mobile {
 
 .contactPhone:hover,
 .contactMail:hover {
-    font-weight: 400;
+    opacity: 70%;
 }
 
 .socialMedia {
