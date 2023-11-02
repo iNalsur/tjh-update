@@ -244,10 +244,14 @@ header .mobile {
         align-self: center;
     }
 
+    #bookTimeBox .content {
+        width: 100%;
+    }
+
     #bookTimeBox .companyLargeDescription {
         background-color: rgba(0, 0, 0, 0.5);
         font-weight: 400;
-        padding: 10px 40px;
+        padding: 10px 20px;
     }
 
     #bookTimeBox .button:hover {
@@ -270,10 +274,6 @@ header .mobile {
         font-size: 1.5rem;
     }
 
-    #bookTimeBox .content {
-        width: 95%;
-    }
-
     #bookTimeBox {
         height: 350px;
     }
@@ -281,12 +281,13 @@ header .mobile {
 
 @media only screen and (max-width: 530px) {
     #bookTimeBox .companyLargeDescription {
-        display: none;
+        position: relative;
     }
 
     #bookTimeBox .companyShortDescription {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 20px;
+        position: relative;
     }
 }
 
