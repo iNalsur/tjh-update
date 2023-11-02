@@ -359,6 +359,29 @@ header .mobile {
     display: flex;
 }
 
+@media only screen and (max-width: 1260px) {
+    .left-content {
+        width: 100%;
+        height: 200px;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+
+    #jobSection .container {
+        display: block;
+    }
+
+    .slider-dots {
+        width: 100%;
+    }
+
+    .cancel {
+        display: none;
+    }
+}
+
 /* Contact Section Style */
 
 #contactSection {
