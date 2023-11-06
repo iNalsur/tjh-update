@@ -13,6 +13,7 @@ html {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:visited {
@@ -206,6 +207,7 @@ header .mobile {
     border-radius: 3px;
     letter-spacing: .07em;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 
