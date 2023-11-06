@@ -74,12 +74,6 @@ header a {
     padding: 15px;
 }
 
-header a:hover {
-    background-color: #FF6600;
-    color:#0F0F0F;
-    border-radius: 3px;
-}
-
 p span {
     font-weight: 700;
     font-size: 2rem;
