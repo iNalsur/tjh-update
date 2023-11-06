@@ -111,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let workHover = document.getElementById("workHover")
 let conHover = document.getElementById("conHover")
+let button = document.getElementById("button")
 
 workHover.addEventListener("mouseover", function() {
     workHover.style.backgroundColor = "#FF6600";
@@ -146,4 +147,16 @@ conHover.addEventListener("mouseup", function() {
     conHover.style.backgroundColor = "";
     conHover.style.color = "";
     conHover.style.borderRadius = "";
+});
+
+button.addEventListener("mouseover", function() {
+    button.style.opacity = "70%";
+});
+
+button.addEventListener("mouseout", function() {
+    button.style.opacity = "";
+});
+
+button.addEventListener("mouseup", function() {
+    button.style.opacity = "";
 });
