@@ -208,9 +208,6 @@ header .mobile {
     margin-top: 30px;
 }
 
-#bookTimeBox .button:hover {
-    opacity: 70%;
-}
 
 .backgroundImage { 
     width: 50%;
@@ -246,10 +243,6 @@ header .mobile {
         font-weight: 400;
         padding: 10px 20px;
     }
-
-    #bookTimeBox .button:hover {
-        background-color:rgba(0, 0, 0, 0.5);
-    }    
 }
 
 @media only screen and (max-width: 900px) {
