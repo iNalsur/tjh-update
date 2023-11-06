@@ -457,11 +457,6 @@ header .mobile {
     font-weight: 300;
 }
 
-.contactPhone:hover,
-.contactMail:hover {
-    opacity: 70%;
-}
-
 .socialMedia {
     display: flex;
     align-items: center;
