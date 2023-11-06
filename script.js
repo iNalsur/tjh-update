@@ -160,3 +160,105 @@ button.addEventListener("mouseout", function() {
 button.addEventListener("mouseup", function() {
     button.style.opacity = "";
 });
+
+// Script which scrolls to a specific div, and stops when div in totally seen
+
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollButton = document.getElementById("button");
+    const targetDiv = document.getElementById("contactSection");
+    let scrollHandler; 
+
+    scrollButton.addEventListener("click", function() {
+        const targetPosition = targetDiv.offsetTop;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+        });
+
+        scrollHandler = function() {
+            const targetBottom = targetDiv.offsetTop + targetDiv.offsetHeight;
+
+            if (window.scrollY + window.innerHeight >= targetBottom) {
+                window.removeEventListener("scroll", scrollHandler); 
+            }
+        };
+
+        window.addEventListener("scroll", scrollHandler);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollButton = document.getElementById("navButton");
+    const targetDiv = document.getElementById("contactSection");
+    let scrollHandler; 
+
+    scrollButton.addEventListener("click", function() {
+        const targetPosition = targetDiv.offsetTop;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+        });
+
+        scrollHandler = function() {
+            const targetBottom = targetDiv.offsetTop + targetDiv.offsetHeight;
+
+            if (window.scrollY + window.innerHeight >= targetBottom) {
+                window.removeEventListener("scroll", scrollHandler); 
+            }
+        };
+
+        window.addEventListener("scroll", scrollHandler);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollButton = document.getElementById("conHover");
+    const targetDiv = document.getElementById("contactSection");
+    let scrollHandler; 
+
+    scrollButton.addEventListener("click", function() {
+        const targetPosition = targetDiv.offsetTop;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+        });
+
+        scrollHandler = function() {
+            const targetBottom = targetDiv.offsetTop + targetDiv.offsetHeight;
+
+            if (window.scrollY + window.innerHeight >= targetBottom) {
+                window.removeEventListener("scroll", scrollHandler); 
+            }
+        };
+
+        window.addEventListener("scroll", scrollHandler);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollButton = document.getElementById("workHover");
+    const targetDiv = document.getElementById("jobSection");
+    let scrollHandler; 
+
+    scrollButton.addEventListener("click", function() {
+        const targetPosition = targetDiv.offsetTop;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+        });
+
+        scrollHandler = function() {
+            const targetBottom = targetDiv.offsetTop + targetDiv.offsetHeight;
+
+            if (window.scrollY + window.innerHeight >= targetBottom) {
+                window.removeEventListener("scroll", scrollHandler); 
+            }
+        };
+
+        window.addEventListener("scroll", scrollHandler);
+    });
+});
