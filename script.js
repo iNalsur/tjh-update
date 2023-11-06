@@ -112,6 +112,8 @@ document.addEventListener("DOMContentLoaded", function() {
 let workHover = document.getElementById("workHover")
 let conHover = document.getElementById("conHover")
 let button = document.getElementById("button")
+let contactPhone = document.getElementById("contactPhone")
+let contactMail = document.getElementById("contactMail")
 
 workHover.addEventListener("mouseover", function() {
     workHover.style.backgroundColor = "#FF6600";
@@ -159,6 +161,30 @@ button.addEventListener("mouseout", function() {
 
 button.addEventListener("mouseup", function() {
     button.style.opacity = "";
+});
+
+contactPhone.addEventListener("mouseover", function() {
+    contactPhone.style.opacity = "70%";
+});
+
+contactPhone.addEventListener("mouseout", function() {
+    contactPhone.style.opacity = "";
+});
+
+contactPhone.addEventListener("mouseup", function() {
+    contactPhone.style.opacity = "";
+});
+
+contactMail.addEventListener("mouseover", function() {
+    contactMail.style.opacity = "70%";
+});
+
+contactMail.addEventListener("mouseout", function() {
+    contactMail.style.opacity = "";
+});
+
+contactMail.addEventListener("mouseup", function() {
+    contactMail.style.opacity = "";
 });
 
 // Script which scrolls to a specific div, and stops when div in totally seen
