@@ -106,3 +106,44 @@ document.addEventListener("DOMContentLoaded", function() {
         nextDiv = tempDiv;
     }, 10000);
 });
+
+// Script which changes style for the navigation links when mouse in on, off, or clicked and mouse is out
+
+let workHover = document.getElementById("workHover")
+let conHover = document.getElementById("conHover")
+
+workHover.addEventListener("mouseover", function() {
+    workHover.style.backgroundColor = "#FF6600";
+    workHover.style.color = "#0F0F0F";
+    workHover.style.borderRadius = "3px";
+});
+
+workHover.addEventListener("mouseout", function() {
+    workHover.style.backgroundColor = "";
+    workHover.style.color = "";
+    workHover.style.borderRadius = "";
+})
+
+workHover.addEventListener("mouseup", function() {
+    workHover.style.backgroundColor = "";
+    workHover.style.color = "";
+    workHover.style.borderRadius = "";
+});
+
+conHover.addEventListener("mouseover", function() {
+    conHover.style.backgroundColor = "#FF6600";
+    conHover.style.color = "#0F0F0F";
+    conHover.style.borderRadius = "3px";
+});
+
+conHover.addEventListener("mouseout", function() {
+    conHover.style.backgroundColor = "";
+    conHover.style.color = "";
+    conHover.style.borderRadius = "";
+})
+
+conHover.addEventListener("mouseup", function() {
+    conHover.style.backgroundColor = "";
+    conHover.style.color = "";
+    conHover.style.borderRadius = "";
+});
