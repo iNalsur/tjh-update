@@ -1,3 +1,5 @@
+// Script which makes slides change to another slide every 10 second, and also user can manually change slides by pressing dots, timer restarts when user uses manual change 
+
 let slideIndex = 1;
 let slideInterval;
 showSlides(slideIndex);
@@ -82,6 +84,8 @@ function handleSwipe() {
     }
 }
 
+// Script which smoothly hides specific ID when user don't see it, and smoothly shows it back when user starts to see it
+
 const bookTimeSection = document.getElementById("bookTimeSection");
 
 window.addEventListener("scroll", () => {
@@ -116,6 +120,8 @@ window.addEventListener("scroll", () => {
         contactSection.style.transition = 'opacity 1s';
     }
 });
+
+// Script which changes two divs between each others every 10 seconds
 
 document.addEventListener("DOMContentLoaded", function() {
     const div1 = document.querySelector(".companyShortDescription");
