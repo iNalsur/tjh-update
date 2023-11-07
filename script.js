@@ -1,11 +1,14 @@
 let slideIndex = 1;
+let slideInterval;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+    clearTimeout(slideInterval)
     showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
+    clearTimeout(slideInterval)
     showSlides(slideIndex = n);
 }
 
@@ -33,6 +36,10 @@ function showSlides(n) {
     fadeIn(currentSlide);
 
     dots[slideIndex - 1].className += " active";
+
+    slideInterval = setTimeout(function() {
+        plusSlides(1);
+    }, 10000);
 }
 
 function fadeIn(element) {
@@ -48,9 +55,9 @@ function fadeIn(element) {
     }, 50);
 }
 
-setInterval(function() {
+slideInterval = setTimeout(function() {
     plusSlides(1);
-}, 10000); 
+}, 10000);
 
 const bookTimeSection = document.getElementById("bookTimeSection");
 
