@@ -59,6 +59,29 @@ slideInterval = setTimeout(function() {
     plusSlides(1);
 }, 10000);
 
+// Script which adds swipping effect to the left/right with a finger to change slide
+
+const slideContainer = document.querySelector(".slideshow-container");
+
+slideContainer.addEventListener("touchstart", function(event) {
+    touchStartX = event.touches[0].clientX;
+});
+
+slideContainer.addEventListener("touchend", function(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+
+    if (touchEndX < touchStartX - swipeThreshold) {
+        plusSlides(1);
+    } else if (touchEndX > touchStartX + swipeThreshold) {
+        plusSlides(-1);
+    }
+}
+
 const bookTimeSection = document.getElementById("bookTimeSection");
 
 window.addEventListener("scroll", () => {
