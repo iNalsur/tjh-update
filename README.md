@@ -2,7 +2,7 @@
 
 <h2>Introduction</h2>
 
-This is update for my first project that I did for my friend entrepreneur. The idea behind the update was to make the site more interactive using JavaScript and to use the new skills I have learned.
+This is update for my first project that I did for my entrepreneur friend. The idea behind the update was to make the site more interactive using JavaScript and to use the new skills I have learned.
 
 To view the site, click on the logo or click on this link.
 
